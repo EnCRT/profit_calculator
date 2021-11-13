@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profit Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script src="test.js" defer></script>
+</head>
+
+<body>
+  <main class="stat-block">
+    <section class="hero is-info">
+      <div class="hero-body">
+        <p class="title">
+          Profit Calculator.
+        </p>
+        <article class="message is-primary">
+          <div class="message-header">
+            <p>Description</p>
+          </div>
+          <div class="message-body">
+            The module calculates how many signals you need to work out to get the required amount of USDT.
+          </div>
+          <div class="notification is-danger is-light">
+            Be careful, high leverage can cause an unexpected liquidation of your position!
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="statistic">
+
+      <div class="container is-fluid">
+        <div class="notification">
+          <div class="field">
+            <div class="control">
+              <input class="input input-depo" type="number" min="1" placeholder="START DEPO" required>
+              <input class="input input-percent" type="number" min="1" placeholder="PERCENTAGE" required>
+              <input class="input input-target" type="number" min="1" placeholder="TARGET" required>
+            </div>
+            <button class="button is-primary is-medium button--new">CALCULATE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Start Depo</p>
+            <p class="title title-depo"> - </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">percentage</p>
+            <p class="title title-percent"> - </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">trade count</p>
+            <p class="title title-count"> - </p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">profit</p>
+            <p class="title title-profit"> - </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p class="modal-card-title">Input error</p>
+        <button class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <article class="message is-danger">
+          <div class="message-body">
+            Plees write data to all fields!
+          </div>
+        </article>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button is-success okbtn">OK, i understand</button>
+      </footer>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Bulma</strong> practice by <a href="https://github.com/EnCRT">Dima Anosov</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
