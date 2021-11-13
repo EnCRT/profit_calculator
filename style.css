@@ -1,0 +1,29 @@
+.button--new {
+  width: 100%;
+  align-self: center;
+}
+
+.stat-block {
+  padding-bottom: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistic {
+  transform: translateX(0%);
+}
+
+.level {
+  padding-top: 28px;
+}
+
+.notification {
+  margin-top: 16px;
+}
+
+.input {
+  margin-bottom: 8px;
+}
